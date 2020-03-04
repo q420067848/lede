@@ -7,16 +7,15 @@
 # <https://github.com/KFERMercer/OpenWrt-CI>
 #
 
-name: OpenWrt-pi_3b
+name: OpenWrt-pi_3bv2.0
 
 on:
+  schedule:
+    - cron: 0 20 * * *
   push:
     branches: 
       - master
-  # schedule:
-  #   - cron: 0 20 * * *
-  # release:
-  #   types: [published]
+  
 
 jobs:
 
